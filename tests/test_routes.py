@@ -129,7 +129,6 @@ class TestAccountService(TestCase):
             response.status_code, status.HTTP_415_UNSUPPORTED_MEDIA_TYPE
             )
 
-    # ADD YOUR TEST CASES HERE ...
     def test_security_headers(self):
         """It should return security headers"""
         response = self.client.get('/', environ_overrides=HTTPS_ENVIRON)
