@@ -148,7 +148,6 @@ class TestAccountService(TestCase):
         # Check for the CORS header
         self.assertEqual(response.headers.get('Access-Control-Allow-Origin'), '*')
 
-
     def test_get_account(self):
         """It should Read a single Account"""
         account = self._create_accounts(1)[0]
